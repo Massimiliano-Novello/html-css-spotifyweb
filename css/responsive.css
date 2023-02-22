@@ -1,11 +1,46 @@
 /* Desktop 1100 */
 @media screen and (max-width: 1100px) {
+    /* Played */
+
+    .nav-list {
+        padding: 0 20px;
+    }
+
     .row-recently {
         display: flex;
         flex-wrap: wrap;
     }
 
     .col {
-        width: calc(100% / 4);
+        width: calc(100% / 5);
     }
+}
+
+@media screen and (max-width: 600px) {
+    /* Sidebar */
+    .home-icons {
+        display: none;
+    }
+
+    .playlist {
+        display: none;
+    }
+
+    .dowload {
+        margin-top: 360px;
+    }
+
+    .dowload span,
+    hr {
+        display: none;
+    }
+
+    .dowload i {
+        display: block;
+    }
+
+    .user {
+        margin-top: 10px;
+    }
+
 }

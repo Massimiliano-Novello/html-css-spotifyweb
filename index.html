@@ -4,13 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Spotify</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="wrapper">
-        <div class="sidebar"></div>
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="">
+                    <img src="img/logo.svg" alt="">
+                </a>
+            </div>
+            <!-- /Logo -->
+            <!-- Home list -->
+            <div class="home">
+                <ul class="home-list">
+                    <li>
+                       <a href="">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="home-icons">Home</span>
+                       </a> 
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span class="home-icons">Cerca</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-list"></i>
+                            <span class="home-icons">La tua libreria</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /Home list -->
+
+            <!-- Playlist -->
+            <div class="playlist">
+                <ul class="list">
+                    <li>
+                        <h3>Playlist</h3>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-plus plus"></i>
+                        <span class="create">Crea playlist</span>
+                    </li>
+                    <li>Nome playlist</li>
+                    <li>Nome playlist</li>
+                    <li>Nome playlist</li>
+                    <li>Nome playlist</li>
+                    <li>Nome playlist</li>
+                    <li>Nome playlist</li>
+                    <li>Nome playlist</li>
+                </ul>
+            </div>
+            <!-- /Playlist -->
+
+            <!-- Dowload -->
+            <div class="dowload">
+                <a href="">
+                    <i class="fa-solid fa-circle-arrow-down down"></i>
+                </a>
+                <span class="install">Installa App</span>
+                <hr>
+                <a href="">
+                    <i class="fa-regular fa-user user"></i>
+                    <span class="name">Jhon Doe</span>
+                </a>
+            </div>
+            <!-- /Dowload -->
+
+
+        </div>
+        <!-- /SIDEBAR -->
+
+
+        <!-- CONTENT -->
         <div class="content">
             <div class="header"></div>
             <div class="played">
@@ -32,11 +114,24 @@
                     <div class="col"></div>
                     <div class="col"></div>
                     <div class="col"></div>
-                    <div class="col"></div>
+                    <div class="col">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus obcaecati nisi blanditiis atque, debitis quo. Itaque maiores, magnam error sequi dolorem atque aliquam voluptatibus vitae rerum, vel impedit accusamus eaque!
+                    </div>
+                </div>
+                <div class="row-created">
+                    <div class="col-created"></div>
+                    <div class="col-created"></div>
+                </div>
+
+                <div class="row-created">
+                    <div class="col-created"></div>
+                    <div class="col-created"></div>
                 </div>
             </div>
         </div>
     </div>
+        <!-- /CONTENT -->
+
     <div class="play-bar"></div>       
     
 </body>
