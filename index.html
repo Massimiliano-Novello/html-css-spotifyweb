@@ -33,19 +33,19 @@
                 <ul class="home-list">
                     <li>
                        <a href="">
-                        <i class="fa-solid fa-house"></i>
+                        <img src="img/home.svg" alt="">
                         <span class="home-icons">Home</span>
                        </a> 
                     </li>
                     <li>
                         <a href="">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <img src="img/search.svg" alt="">
                             <span class="home-icons">Cerca</span>
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <i class="fa-solid fa-list"></i>
+                            <img src="img/libreria.svg" alt="">
                             <span class="home-icons">La tua libreria</span>
                         </a>
                     </li>
@@ -56,20 +56,20 @@
             <!-- Playlist -->
             <div class="playlist">
                 <ul class="list">
-                    <li>
+                    <li class="list-playlist">
                         <h3>Playlist</h3>
                     </li>
-                    <li>
+                    <li class="list-playlist">
                         <i class="fa-solid fa-plus plus"></i>
                         <span class="create">Crea playlist</span>
                     </li>
-                    <li>Nome playlist</li>
-                    <li>Nome playlist</li>
-                    <li>Nome playlist</li>
-                    <li>Nome playlist</li>
-                    <li>Nome playlist</li>
-                    <li>Nome playlist</li>
-                    <li>Nome playlist</li>
+                    <li class="list-playlist">Nome playlist</li>
+                    <li class="list-playlist">Nome playlist</li>
+                    <li class="list-playlist">Nome playlist</li>
+                    <li class="list-playlist">Nome playlist</li>
+                    <li class="list-playlist">Nome playlist</li>
+                    <li class="list-playlist">Nome playlist</li>
+                    <li class="list-playlist">Nome playlist</li>
                 </ul>
             </div>
             <!-- /Playlist -->
@@ -77,12 +77,12 @@
             <!-- Dowload -->
             <div class="dowload">
                 <a href="">
-                    <i class="fa-solid fa-circle-arrow-down down"></i>
+                   <img class="dowload-img" src="img/download.svg" alt="">
+                   <span class="install">Installa App</span>
                 </a>
-                <span class="install">Installa App</span>
                 <hr>
                 <a href="">
-                    <i class="fa-regular fa-user user"></i>
+                    <img class="user" src="img/profile.svg" alt="">
                     <span class="name">Jhon Doe</span>
                 </a>
             </div>
@@ -102,22 +102,22 @@
                 <div class="navigation">
                     <ul class="nav-list">
                         <li>
-                            <a href="">IN EVIDENZA</a>
+                            <a class="navigations" href="">IN EVIDENZA</a>
                         </li>
                         <li>
-                            <a href="PODCAST"></a>
+                            <a class="navigations" href="">PODCAST</a>
                         </li>
                         <li>
-                            <a href="">CLASSIFICHE</a>
+                            <a class="navigations" href="">CLASSIFICHE</a>
                         </li>
                         <li>
-                            <a href="">GENERI E MOOD</a>
+                            <a class="navigations" href="">GENERI E MOOD</a>
                         </li>
                         <li>
-                            <a href="">NUOVE USCITE</a>
+                            <a class="navigations" href="">NUOVE USCITE</a>
                         </li>
                         <li>
-                            <a href="">SCOPRI</a>
+                            <a class="navigations" href="">SCOPRI</a>
                         </li>
                     </ul>
                 </div>
@@ -125,32 +125,50 @@
                     <h2>Recently played</h2>
                     <div class="album">
                         <div class="col">
-                            <img src="img/metal_lifting.jpg" alt="">
+                            <div class="album-hover">
+                                <i class="fa-sharp fa-regular fa-circle-play"></i>
+                                <img src="img/metal_lifting.jpg" alt="">
+                            </div>
                             <h3>Heavy Metal</h3>
                             <div class="subtitle">Subtitle</div>
                         </div>
                         <div class="col">
-                            <img src="img/stranger.jpeg" alt="">
+                            <div class="album-hover">
+                                <i class="fa-sharp fa-regular fa-circle-play"></i>
+                                <img src="img/stranger.jpeg" alt="">
+                            </div>
                             <h3>Stranger thinks, Vol.1(a netflix original series Soundtrack)</h3>
                             <div class="subtitle">Kyle Dixson & Michael Stein</div>
                         </div>
                         <div class="col">
-                            <img src="img/aquietplace.jpeg" alt="">
+                            <div class="album-hover">
+                                <i class="fa-sharp fa-regular fa-circle-play"></i>
+                                <img src="img/aquietplace.jpeg" alt="">
+                            </div>
                             <h3>A quiet place</h3>
                             <div class="subtitle">Subtitle</div>
                         </div>
                         <div class="col">
-                            <img src="img/split.jpeg" alt="">
+                            <div class="album-hover">
+                                <i class="fa-sharp fa-regular fa-circle-play"></i>
+                                <img src="img/split.jpeg" alt="">
+                            </div>
                             <h3>Split</h3>
                             <div class="subtitle">Subtitle</div>
                         </div>
                         <div class="col">
-                            <img src="img/cure.jpeg" alt="">
+                            <div class="album-hover">
+                                <i class="fa-sharp fa-regular fa-circle-play"></i>
+                                <img src="img/cure.jpeg" alt="">
+                            </div>
                             <h3>A cure for wellness</h3>
                             <div class="subtitle">Subtitle</div>
                         </div>
                         <div class="col">
-                            <img src="img/sinister.jpeg" alt="">
+                            <div class="album-hover">
+                                <i class="fa-sharp fa-regular fa-circle-play"></i>
+                                <img src="img/sinister.jpeg" alt="">
+                            </div>
                             <h3>Sinister</h3>
                             <div class="subtitle">Subtitle</div>
                         </div>
@@ -192,7 +210,56 @@
     </div>
     <!-- /CONTENT -->
     
-    <div class="play-bar"></div>       
+    <div class="play-bar">
+        <div class="footer">
+            <div class="footer-music">
+                <div class="music-image">
+                    <div class="cover">
+                        <img src="img/sinister.jpeg" alt="">
+                    </div>
+                    <div class="music-name">
+                        <h4>Sinister</h4>
+                        <p>Brano nome</p>
+                    </div>
+                </div>
+                <div class="icons">
+                    <a class="hearts" href="">
+                        <i class="fa-sharp fa-regular fa-heart"></i>
+                    </a>
+                    <a class="hearts" href="">                       
+                        <i class="fa-sharp fa-regular fa-folder"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-play">
+                <ul class="play">
+                    <li>
+                        <i class="fa-sharp fa-solid fa-shuffle"></i>
+                    </li>
+                    <li>
+                        <i class="fa-sharp fa-solid fa-backward-fast"></i>
+                    </li>
+                    <li>
+                        <i class="fa-sharp fa-regular fa-circle-play"></i>
+                    </li>
+                    <li>
+                        <i class="fa-sharp fa-solid fa-forward-fast"></i>
+                    </li>
+                    <li>
+                        <i class="fa-sharp fa-solid fa-rotate-right"></i>
+                    </li>
+                </ul>
+                <div class="bar-time">
+                    <span>0:25</span>
+                    <div class="music-time">
+                        <div></div>
+                    </div>
+                    <span>4:35</span>
+                </div>
+            </div>
+            <div class="music-volume"></div>
+        </div>
+    </div>       
     
 </body>
 </html>

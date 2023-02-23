@@ -57,6 +57,10 @@ a {
     font-size: .8rem;
 }
 
+.home-list img {
+    width: 15px;
+}
+
 .playlist {
     padding: 0 1rem;
     margin-top: 20px;
@@ -70,6 +74,10 @@ a {
     margin-top: 10px;
     font-weight: 100;
     font-size: .7rem;
+}
+
+.list-playlist:hover {
+    color: white;
 }
 
 .create {
@@ -90,8 +98,12 @@ a {
 
 .dowload {
     padding: 0 1rem;
-    margin-top: 90px;
     font-weight: 100;
+}
+
+
+.dowload-img {
+    width: 10px;
 }
 
 .dowload hr {
@@ -102,6 +114,12 @@ a {
 .install {
     color: #A3A3A3;
     font-size: .7rem;
+}
+
+.user {
+    width: 13px;
+    background-color: #A3A3A3;
+    border-radius: 50%;
 }
 
 .name {
@@ -138,6 +156,11 @@ a {
     margin-right: 10px;
 }
 
+.upgrade:hover {
+    font-size: 1rem;
+
+}
+
 
 /* Played */
 .played {
@@ -155,6 +178,11 @@ a {
     font-size: .7rem;
 }
 
+.navigations:hover {
+    color: white;
+    border-bottom: 1px solid orange;
+}
+
 .row-recently {
     padding: 20px;
 }
@@ -169,10 +197,30 @@ a {
     gap: 10px;
 }
 
+.album i {
+    display: none;
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 65px;
+    right: 65px;
+}
+
 .col {
     width: calc(100% / 6);
     text-align: center;
+    position: relative;
 }
+
+.col:hover i {
+    display: inline-block;
+}
+
+.col:hover {
+    opacity: .5;
+}
+
+
 
 .col h3 {
     padding: 7px 0;
@@ -210,7 +258,92 @@ a {
 
 /* PLAY-BAR */
 .play-bar {
+    padding: 20px;
     height: 100px;
     width: 100%;
     background-color: #282828;
 }
+
+.footer {
+    display: flex;
+    align-items: center;
+}
+
+.footer-music,
+.music-volume {
+    width: 20%;
+}
+
+.footer-music {
+    display: flex;
+}
+
+.footer-play {
+    flex-grow: 1;
+}
+
+.music-image {
+    display: flex;
+    margin-right: 50px;
+}
+
+.music-image img {
+    width: 40px;
+}
+
+.cover {
+    margin-right: 5px;
+}
+
+.music-name {
+    font-size: .8rem;
+    color: white;
+    margin-top: 5px;
+}
+
+.music-name p {
+    color: #A3A3A3;
+}
+
+.icons i {
+    margin-right: 10px;
+    font-size: .8rem;
+}
+
+.hearts:hover {
+    color: white;
+}
+
+.play {
+    display: flex;
+    justify-content: center;
+}
+
+.play li {
+    margin-right: 40px;
+}
+
+.play i {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.bar-time {
+    text-align: center;
+}
+.bar-time span {
+    font-size: .5rem;
+    color: white;
+}
+
+.music-time {
+    border: 1px solid white;
+    width: 300px;
+    display: inline-block;
+}
+
+.music-time div {
+    border: 1px solid red;
+    width: 100px;
+}
+

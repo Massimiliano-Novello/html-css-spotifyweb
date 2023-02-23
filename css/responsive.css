@@ -14,6 +14,7 @@
     .col {
         width: calc((100% / 4) - (20px / 2));
     }
+
 }
 
 /* 700 px */
@@ -72,9 +73,7 @@
         display: none;
     }
 
-    .dowload {
-        margin-top: 360px;
-    }
+
 
     .dowload span,
     hr {
