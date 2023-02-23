@@ -267,28 +267,27 @@ a {
 .footer {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-.footer-music,
-.music-volume {
-    width: 20%;
-}
 
 .footer-music {
     display: flex;
 }
 
-.footer-play {
-    flex-grow: 1;
+.music-volume {
+    text-align: right;
 }
+
 
 .music-image {
     display: flex;
-    margin-right: 50px;
+    margin-right: 30px;
 }
 
 .music-image img {
     width: 40px;
+    height: 40px;
 }
 
 .cover {
@@ -340,10 +339,33 @@ a {
     border: 1px solid white;
     width: 300px;
     display: inline-block;
+    background-color: white;
 }
 
 .music-time div {
     border: 1px solid red;
     width: 100px;
 }
+
+.volume-bar {
+    border: 1px solid white;
+    background-color: white;
+    width: 100px;
+    margin-top: 8px;
+}
+
+.volume-bar div {
+    border: 1px solid red ;
+    width: 20px;
+}
+
+.volume {
+    display: flex;
+}
+
+.volume li {
+    margin-right: 10px;
+    color: white;
+}
+
 

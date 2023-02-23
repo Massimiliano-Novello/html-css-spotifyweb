@@ -33,7 +33,15 @@
     .col {
         width: calc((100% / 2) - (20px / 2));
     }
-    
+
+    /* Play bar */
+    .play li {
+        margin-right: 20px;
+    }
+
+    .music-time {
+        width: 150px;
+    }
 }
 
 
