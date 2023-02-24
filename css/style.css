@@ -29,7 +29,6 @@ ul {
 a {
     text-decoration: none;
     color:  #A3A3A3;
-    color: inherit;
 }
 
 
@@ -38,6 +37,7 @@ a {
     width: 200px;
     height: 100%;
     background-color: #000000;
+    position: relative;
 }
 
 .logo {
@@ -61,6 +61,11 @@ a {
 .home-list img {
     width: 15px;
 }
+
+.home-hover:hover {
+    color: white;
+}
+
 
 .playlist {
     padding: 0 1rem;
@@ -100,6 +105,9 @@ a {
 .dowload {
     padding: 0 1rem;
     font-weight: 100;
+    position: absolute;
+    top: 90%;
+    left: 0;
 }
 
 
@@ -115,6 +123,10 @@ a {
 .install {
     color: #A3A3A3;
     font-size: .7rem;
+}
+
+.install:hover {
+    color: white;
 }
 
 .user {
@@ -198,26 +210,30 @@ a {
     gap: 10px;
 }
 
-.album i {
+.album-hover i {
     display: none;
     color: white;
     font-size: 2rem;
     position: absolute;
-    top: 65px;
-    right: 65px;
+    top: 40%;
+    right: 40%;
+}
+
+.album-hover {
+    position: relative;
 }
 
 .col {
     width: calc(100% / 6);
     text-align: center;
-    position: relative;
 }
 
 .col:hover i {
     display: inline-block;
+    color: white;
 }
 
-.col:hover {
+.album-hover:hover img {
     opacity: .5;
 }
 
@@ -305,6 +321,10 @@ a {
 
 .cover-icon a {
     font-size: 1.2rem;
+}
+
+.cover-icon:hover i {
+    color: white;
 }
 
 /* Player */
