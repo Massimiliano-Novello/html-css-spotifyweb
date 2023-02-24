@@ -29,6 +29,7 @@ ul {
 a {
     text-decoration: none;
     color:  #A3A3A3;
+    color: inherit;
 }
 
 
@@ -41,7 +42,7 @@ a {
 
 .logo {
     padding:  1rem;
-} 
+}
 
 .logo-small {
     display: none;
@@ -266,106 +267,130 @@ a {
 
 .footer {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
-
-.footer-music {
-    display: flex;
+.cover,
+.audio {
+    width: 200px;
 }
 
-.music-volume {
-    text-align: right;
+.player {
+    width: 40%;
 }
 
-
-.music-image {
-    display: flex;
-    margin-right: 30px;
-}
-
-.music-image img {
-    width: 40px;
-    height: 40px;
-}
-
+/* Cover */
 .cover {
-    margin-right: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.music-name {
+.cover-img {
+    width: 30%;
+}
+
+.cover-title {
     font-size: .8rem;
-    color: white;
-    margin-top: 5px;
+    margin-left: 5px
 }
 
-.music-name p {
+.cover-title h4 {
+    color: white;
+}
+
+.cover-title p {
     color: #A3A3A3;
 }
 
-.icons i {
-    margin-right: 10px;
-    font-size: .8rem;
+.cover-icon a {
+    font-size: 1.2rem;
 }
 
-.hearts:hover {
+/* Player */
+
+.player-icons {
+    height: 60%;
+}
+
+.player-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1rem;
+}
+
+.player-list a {
     color: white;
 }
 
 .play {
+    font-size: 2rem;
+}
+
+.play-icons:hover {
+    transform: scale(1.2);
+}
+
+.player-bar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
-.play li {
-    margin-right: 40px;
-}
-
-.play i {
+.min-minuts,
+.max-minuts {
+    width: 20%;
     color: white;
-    font-size: 1.3rem;
+    font-size: .8rem;
 }
 
-.bar-time {
-    text-align: center;
-}
-.bar-time span {
-    font-size: .5rem;
-    color: white;
-}
 
-.music-time {
-    border: 1px solid white;
-    width: 300px;
-    display: inline-block;
+.bar {
+    width: 80%;
+    height: 4px;
     background-color: white;
+    border-radius: 2px;
+    margin-right: 45px;
 }
 
-.music-time div {
-    border: 1px solid red;
-    width: 100px;
+.min-bar {
+    width: 30%;
+    height: 4px;
+    background-color: red;
+    border-radius: 2px;
 }
 
-.volume-bar {
-    border: 1px solid white;
-    background-color: white;
-    width: 100px;
-    margin-top: 8px;
-}
+/* Audio */
 
-.volume-bar div {
-    border: 1px solid red ;
-    width: 20px;
-}
-
-.volume {
+.audio {
     display: flex;
+    align-items: center;
 }
 
-.volume li {
+.audio-list {
+    display: flex;
+    align-items: center;
+}
+
+.audio-list li {
     margin-right: 10px;
+    font-size: 1.2rem;
     color: white;
 }
 
+.audio-bar {
+    height: 4px;
+    width: 50%;
+    background-color: white;
+    border-radius: 2px;
+}
 
+.min-audio-bar {
+    height: 4px;
+    width: 20%;
+    background-color: red;
+    border-radius: 2px;
+}
